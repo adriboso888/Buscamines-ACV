@@ -2,29 +2,41 @@ import java.util.Scanner;
 
 public class Dificultat {
 
-    public static void Dificultat(String[] args){
-        Scanner lector = new Scanner(System.in);
-        String dificultat;
+    public static int COLUMNES = 0;
+    public static int FILES = 0;
 
-        System.out.print("En quina dificultat vols jugar?\n" +
-                "1- Facil(10x10)\n2- Mitjà(15x15)\n3- Expert(20x20)\n");
-        dificultat = lector.nextLine();
+        static void dificultat(){
+            Scanner lector = new Scanner(System.in);
+            String dificultat;
 
-        switch (dificultat){
+            System.out.print("En quina dificultat vols jugar?\n" +
+                    "1- Facil(10x10)\n2- Mitjà(15x15)\n3- Expert(20x20)\n");
+            dificultat = lector.nextLine();
 
-            case "Facil":{
-                System.out.println("S'ha introduit la dificultat facil (8 mines)");
+            switch (dificultat){
 
-                break;
-            }
-            case "Mitja":{
-                System.out.println("S'ha introduit la dificultat mitja (25 mines)");
-                break;
-            }
-            case "Expert":{
-                System.out.println("S'ha introduit la dificultat experta (40 mines)");
-                break;
+                case "Facil":{
+                    System.out.println("S'ha introduit la dificultat facil");
+                    COLUMNES = 10;
+                    FILES = 10;
+                    Taulell.taulell();
+                    break;
+                }
+                case "Mitja":{
+                    System.out.println("S'ha introduit la dificultat mitja");
+                    COLUMNES = 15;
+                    FILES = 15;
+                    break;
+                }
+                case "Expert":{
+                    System.out.println("S'ha introduit la dificultat experta");
+                    COLUMNES = 20;
+                    FILES = 20;
+                    break;
+                }
+
             }
         }
-    }
 }
+
+
