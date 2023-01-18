@@ -13,15 +13,16 @@ public class Dificultat {
         switch (dificultat){
 
             case "Facil":{
-                System.out.println("S'ha introduit la dificultat facil");
+                System.out.println("S'ha introduit la dificultat facil (8 mines)");
+
                 break;
             }
             case "Mitja":{
-                System.out.println("S'ha introduit la dificultat mitja");
+                System.out.println("S'ha introduit la dificultat mitja (25 mines)");
                 break;
             }
             case "Expert":{
-                System.out.println("S'ha introduit la dificultat experta");
+                System.out.println("S'ha introduit la dificultat experta (40 mines)");
                 break;
             }
         }
