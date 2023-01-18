@@ -24,16 +24,16 @@ public class Dificultat {
                 }
                 case 2:{
                     System.out.println("S'ha introduit la dificultat mitja");
-                    COLUMNES = 15;
-                    FILES = 15;
+                    files = 15;
+                    columnes = 15;
                     Taulell.taulell();
 
                     break;
                 }
                 case 3:{
                     System.out.println("S'ha introduit la dificultat experta");
-                    COLUMNES = 20;
-                    FILES = 20;
+                    files = 20;
+                    columnes = 20;
                     Taulell.taulell();
 
                     break;
