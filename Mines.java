@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class Mines {
-
+/*
     public int posarMines(){
         Random rand = new Random();
         int numMines = Dificultat;
@@ -11,7 +11,7 @@ public class Mines {
 
             }
         }
-    }
+    }*/
 
 
 
