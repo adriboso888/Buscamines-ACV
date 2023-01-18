@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Dificultat {
 
-    public static int COLUMNES = 0;
-    public static int FILES = 0;
+    int
 
         static void dificultat(){
             Scanner lector = new Scanner(System.in);
@@ -17,21 +16,18 @@ public class Dificultat {
 
                 case "Facil":{
                     System.out.println("S'ha introduit la dificultat facil");
-                    COLUMNES = 10;
-                    FILES = 10;
+
                     Taulell.taulell();
                     break;
                 }
                 case "Mitja":{
                     System.out.println("S'ha introduit la dificultat mitja");
-                    COLUMNES = 15;
-                    FILES = 15;
+
                     break;
                 }
                 case "Expert":{
                     System.out.println("S'ha introduit la dificultat experta");
-                    COLUMNES = 20;
-                    FILES = 20;
+                   
                     break;
                 }
             }
