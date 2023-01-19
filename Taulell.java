@@ -1,14 +1,13 @@
 import java.util.Random;
 
 public class Taulell {
-/*
-    static int[][] taulell() {
 
-        int [][]taulell = new int[Dificultat.files][Dificultat.columnes];
-    static int[][] taulell() {
+    static int[][] taulell(int caselles) {
 
-        for (int i = 0; i < Dificultat.files; i++) {
-            for (int j = 0; j < Dificultat.columnes; j++) {
+        int [][]taulell = new int[caselles][caselles];
+
+        for (int i = 0; i < caselles; i++) {
+            for (int j = 0; j < caselles; j++) {
                 taulell[i][j] = (int) (Math.random()*2);
                 System.out.print("*  ");
                 System.out.print("■  ");
@@ -17,7 +16,6 @@ public class Taulell {
             System.out.println();
         }
         return taulell;
-    }*/
-
+    }
 }
 
