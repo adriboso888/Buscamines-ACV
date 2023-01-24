@@ -5,7 +5,7 @@ public class Taulell {
     static int[][] taulell(int caselles) {
 
         int[][] taulell = new int[caselles][caselles];
-        int mines = (int) (Math.pow(caselles, 2) * 0.4);
+        int mines = (int) (Math.pow(caselles, 2) * 0.2);
         int x = 0, y = 0, num = 0, contador = 0;
 
        /* do{
@@ -23,8 +23,8 @@ public class Taulell {
             }
         }while(contador != mines);
 */
-        for(int i = 0; i < taulell[i].length; i++){
-            for(int j = 0;j < taulell[j].length; j++){
+        for(int i = 0; i < caselles; i++){
+            for(int j = 0;j < caselles; j++){
                 taulell[i][j] = 0;
             }
         }
@@ -36,9 +36,9 @@ public class Taulell {
             taulell[x][y] = 1;
         }
 
-        for(int i = 0; i<taulell[i].length;i++){
-            for(int j = 0; j<taulell[j].length;j++){
-                System.out.println(taulell[i][j]);
+        for(int i = 0; i<caselles;i++){
+            for(int j = 0; j<caselles;j++){
+                System.out.print(taulell[i][j]);
             }
         }
        /**
