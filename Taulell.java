@@ -28,10 +28,9 @@ public class Taulell {
                 System.out.print(taulell[i][j]);
             }
             System.out.println();
-            }
+        }
 
 
         return taulell;
     }
 }
-
