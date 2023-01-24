@@ -7,7 +7,6 @@ public class Menu {
             ********************************
             --> Escull les casselles que tindrà el teu taulell: 
             """);
-
     }
 }
 

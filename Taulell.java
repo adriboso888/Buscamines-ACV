@@ -24,8 +24,6 @@ public class Taulell {
                 taulell[x][y] = 1;
                 contador++;
             }
-
-
         } while (contador != mines);
 
         nombresCoordenades(caselles);

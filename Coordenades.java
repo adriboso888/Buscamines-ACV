@@ -11,7 +11,9 @@ public class Coordenades {
         System.out.print("--> Y: ");
         yCoordenades = sc.nextInt();
 
+        if (){
 
+        }
         return xCoordenades;
     }
 
