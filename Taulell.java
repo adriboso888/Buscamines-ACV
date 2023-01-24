@@ -28,9 +28,7 @@ public class Taulell {
 
         } while (contador != mines);
 
-        nombresCoordenades(caselles);
 
-        mostrarTaulell(caselles);
 
         return taulell;
     }
