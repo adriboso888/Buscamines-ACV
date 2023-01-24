@@ -34,6 +34,10 @@ public class Taulell {
         return taulell;
     }
 
+    /** Mostra les cordenades de les caselles
+     * Amb aixo podrem veure les cordenades de X i de Y per seleccionar les caselles
+     * @param caselles
+     */
     public static void nombresCoordenades(int caselles){
         for(int i = 0; i<= caselles; i++ ){
             System.out.print(i + "  ");
@@ -41,6 +45,10 @@ public class Taulell {
         System.out.println();
     }
 
+    /**
+     * Mostra el taulell
+     * @param caselles pasem per parametre les caselles per tal de saber quantes s'han de crear.
+     */
     public static void mostrarTaulell(int caselles){
         for (int i = 0; i < caselles; i++) {
             System.out.print(i+1 + "  ");
