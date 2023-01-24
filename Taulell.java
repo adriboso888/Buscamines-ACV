@@ -23,60 +23,60 @@ public class Taulell {
             }
         }while(contador != mines);
 */
-        for(int i = 0; i < taulell[i].length; i++){
-            for(int j = 0;j < taulell[j].length; j++){
+        for (int i = 0; i < taulell[i].length; i++) {
+            for (int j = 0; j < taulell[j].length; j++) {
                 taulell[i][j] = 0;
             }
         }
 
-        for (int k = 0; k < mines;k++){
-            x = (int) (Math.random()*caselles);
-            y = (int) (Math.random()*caselles);
+        for (int k = 0; k < mines; k++) {
+            x = (int) (Math.random() * caselles);
+            y = (int) (Math.random() * caselles);
 
             taulell[x][y] = 1;
         }
 
-        for(int i = 0; i<taulell[i].length;i++){
-            for(int j = 0; j<taulell[j].length;j++){
+        for (int i = 0; i < taulell[i].length; i++) {
+            for (int j = 0; j < taulell[j].length; j++) {
                 System.out.println(taulell[i][j]);
             }
         }
-       /**
+        /**
 
 
 
 
-        System.out.print(mines);
-        for (int i = 0; i < caselles; i++) {
+         System.out.print(mines);
+         for (int i = 0; i < caselles; i++) {
 
-            for (int j = 0; j < caselles; j++) {
-
-
-                do{
-                    x = (int) (Math.random() * caselles);
-                    y = (int) (Math.random() * caselles);
-                    if (i == x && j == y) {
-                        System.out.print("1");
-                        num = 1;
-                        contadorMines++;
-                    } else {
-                        num = 0;
-                        System.out.print("0");
-                    }
-
-                }while (mines == contadorMines);
-
-                taulell[i][j]= num;
-
-                System.out.print("■  ");
-                System.out.print(taulell[i][j]);
-            }
-            System.out.println();
-
-        }
+         for (int j = 0; j < caselles; j++) {
 
 
-        }*/
+         do{
+         x = (int) (Math.random() * caselles);
+         y = (int) (Math.random() * caselles);
+         if (i == x && j == y) {
+         System.out.print("1");
+         num = 1;
+         contadorMines++;
+         } else {
+         num = 0;
+         System.out.print("0");
+         }
+
+         }while (mines == contadorMines);
+
+         taulell[i][j]= num;
+
+         System.out.print("■  ");
+         System.out.print(taulell[i][j]);
+         }
+         System.out.println();
+
+         }
+
+
+         }*/
 
         return taulell;
     }
