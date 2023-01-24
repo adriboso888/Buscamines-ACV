@@ -30,6 +30,8 @@ public class Taulell {
             System.out.println();
         }
 
+
+
         return taulell;
     }
 }
