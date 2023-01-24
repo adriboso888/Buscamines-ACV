@@ -6,6 +6,7 @@ public class Taulell {
 
         int[][] taulell = new int[caselles][caselles];
 
+
         int mines = (int) (Math.pow(caselles, 2) * 0.2);
         int x = 0, y = 0, num = 0, contador = 0;
 
