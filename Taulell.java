@@ -29,13 +29,8 @@ public class Taulell {
 
         nombresCoordenades(caselles);
 
-        for (int i = 0; i < caselles; i++) {
-            System.out.print(i+1 + "  ");
-            for (int j = 0; j < caselles; j++) {
-                System.out.print("■  ");
-            }
-            System.out.println();
-        }
+        mostrarTaulell(caselles);
+
         return taulell;
     }
 
@@ -44,5 +39,15 @@ public class Taulell {
             System.out.print(i + "  ");
         }
         System.out.println();
+    }
+
+    public static void mostrarTaulell(int caselles){
+        for (int i = 0; i < caselles; i++) {
+            System.out.print(i+1 + "  ");
+            for (int j = 0; j < caselles; j++) {
+                System.out.print("■  ");
+            }
+            System.out.println();
+        }
     }
 }
