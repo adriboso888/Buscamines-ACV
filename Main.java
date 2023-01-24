@@ -13,8 +13,10 @@ Main {
         caselles = sc.nextInt();
 
         Taulell.taulell(caselles);
+        Taulell.nombresCoordenades(caselles);
+        Taulell.mostrarTaulell(caselles);
 
-        Coordenades.DemanarCoordenades(caselles, sc);
+        Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
 
     }
 }

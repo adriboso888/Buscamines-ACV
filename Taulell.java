@@ -30,9 +30,7 @@ public class Taulell {
 
         } while (contador != mines); //mentres el contador no sigui igual a les mines anirem repetint l'acció
 
-        nombresCoordenades(caselles);
 
-        mostrarTaulell(caselles);
 
         return taulell;
     }
