@@ -14,6 +14,7 @@ Main {
         do {
             Menu.mostrarMenu();
 
+
             try {
                 caselles = Integer.parseInt(sc.nextLine());
                 Taulell.taulell(caselles);  
@@ -29,6 +30,11 @@ Main {
             }
 
         }while (!comprovacio);
+
+        Taulell.taulell(caselles);
+        Taulell.nombresCoordenades(caselles);
+        Taulell.mostrarTaulell(caselles, Taulell.taulell(caselles));
+        Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
     }
 }
 
