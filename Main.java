@@ -15,9 +15,7 @@ Main {
         Taulell.taulell(caselles);
         Taulell.nombresCoordenades(caselles);
         Taulell.mostrarTaulell(caselles, Taulell.taulell(caselles));
-
         Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
-
     }
 }
 
