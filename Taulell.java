@@ -26,21 +26,22 @@ public class Taulell {
                 taulell[x][y] = 1;
                 contador++;
             }
-
-
-
         } while (contador != mines); //mentres el contador no sigui igual a les mines anirem repetint l'acció
 
+
         String[][] Coord = new String[caselles][caselles];
+
         return taulell;
     }
 
-    /** Mostra les cordenades de les caselles
+    /**
+     * Mostra les cordenades de les caselles
      * Amb aixo podrem veure les cordenades de X i de Y per seleccionar les caselles
+     *
      * @param caselles
      */
-    public static void nombresCoordenades(int caselles){
-        for(int i = 0; i<= caselles; i++ ){
+    public static void nombresCoordenades(int caselles) {
+        for (int i = 0; i <= caselles; i++) {
             System.out.print(i + "  ");
         }
         System.out.println();
@@ -48,12 +49,16 @@ public class Taulell {
 
     /**
      * Mostra el taulell
+     *
      * @param caselles pasem per parametre les caselles per tal de saber quantes s'han de crear.
      */
     public static String[][]  mostrarTaulell(int caselles, int[][] taulell){
         String[][] Coord = new String[caselles][caselles];
+
+    public static void mostrarTaulell(int caselles, int[][] taulell) {
+
         for (int i = 0; i < caselles; i++) {
-            System.out.print(i+1 + "  ");
+            System.out.print(i + 1 + "  ");
             for (int j = 0; j < caselles; j++) {
                 Coord[i][j] = "■";
                 System.out.print(Coord[i][j] + "  ");
