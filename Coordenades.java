@@ -11,20 +11,25 @@ public class Coordenades {
             xCoordenades = sc.nextInt();
             System.out.print("--> Y: ");
             yCoordenades = sc.nextInt();
-            if(taulell[xCoordenades-1][yCoordenades-1] == 1){
-                System.out.println("☠");
-                detectarMines = true;
-            }else{
-                System.out.println("\uD83C\uDD87");
-            }
+
 
         return xCoordenades;
     }while(!detectarMines);
     }
 
-    public static void actualitzarTaulell(){
+    public static void actualitzarTaulell(int caselles, String[][] Coord, int xCoordenades, int yCoordenades, int[][] taulell){
+        for (int i = 0; i < caselles; i++) {
+            System.out.print(i+1 + "  ");
+            for (int j = 0; j < caselles; j++) {
+                if(taulell[xCoordenades-1][yCoordenades-1] == 1){
+                    Coord[xCoordenades-1][yCoordenades-1] = "☠";
 
+                }else{
+                    Coord[xCoordenades-1][yCoordenades-1] = "\uD83C\uDD87";
+                }
+            }
+            System.out.println();
+        }
     }
-
 
 }
