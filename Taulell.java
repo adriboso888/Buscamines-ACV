@@ -33,7 +33,7 @@ public class Taulell {
 
     /**
      * Mostra les cordenades de les caselles
-     * Amb aixo podrem veure les cordenades de X i de Y per seleccionar les caselles
+     * Amb aixo podrem veure les coordenades de X i de Y per seleccionar les caselles
      *
      * @param caselles
      */
