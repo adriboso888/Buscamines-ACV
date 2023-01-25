@@ -1,4 +1,7 @@
+import java.io.IOException;
 import java.util.Scanner;
+
+import static com.sun.beans.introspect.ClassInfo.clear;
 
 public class Coordenades {
 
@@ -14,14 +17,11 @@ public class Coordenades {
                 coord[i][j] = "■  ";
             }
         }
-
         do {
             System.out.print("--> X: ");
-            xCoordenades = sc.nextInt();
-            System.out.print("--> Y: ");
             yCoordenades = sc.nextInt();
-
-            System.out.flush();
+            System.out.print("--> Y: ");
+            xCoordenades = sc.nextInt();
             if (taulell[xCoordenades - 1][yCoordenades - 1] == 1) {
                 coord[xCoordenades - 1][yCoordenades - 1] = "☠  ";
                 for (int i = 0; i < caselles; i++) {

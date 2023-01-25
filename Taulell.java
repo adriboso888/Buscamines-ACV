@@ -8,7 +8,7 @@ public class Taulell {
 
 
         int mines = (int) (Math.pow(caselles, 2) * 0.2);
-        int x = 0, y = 0, num = 0, contador = 0;
+        int x = 0, y = 0, contador = 0;
 
 
         //construir zones sense mines
@@ -27,9 +27,6 @@ public class Taulell {
                 contador++;
             }
         } while (contador != mines); //mentres el contador no sigui igual a les mines anirem repetint l'acció
-
-
-        String[][] Coord = new String[caselles][caselles];
 
         return taulell;
     }
@@ -60,6 +57,7 @@ public class Taulell {
             for (int j = 0; j < caselles; j++) {
                 Coord[i][j] = "■";
                 System.out.print(Coord[i][j] + "  ");
+                System.out.print(taulell[i][j]);
             }
             System.out.println();
         }

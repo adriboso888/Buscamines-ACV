@@ -1,10 +1,10 @@
+import java.io.IOException;
 import java.util.Scanner;
 
-public class
-Main {
 
-    public static void main(String[] args) {
+public class Main {
 
+    public static void main(String[] args) throws IOException {
 
         Scanner sc = new Scanner(System.in);
         int caselles = 0;
@@ -15,7 +15,12 @@ Main {
         Taulell.taulell(caselles);
         Taulell.nombresCoordenades(caselles);
         Taulell.mostrarTaulell(caselles, Taulell.taulell(caselles));
+
+
         Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
     }
+
+
+
 }
 
