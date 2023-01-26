@@ -40,7 +40,7 @@ public class Coordenades {
                 } else {
                     System.out.println("\uD83C\uDD87");
                 }
-//hola que tal
+
 
                 System.out.flush();
                 if (taulell[xCoordenades - 1][yCoordenades - 1] == 1) {
