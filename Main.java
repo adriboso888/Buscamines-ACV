@@ -14,7 +14,6 @@ Main {
         do {
             Menu.mostrarMenu();
 
-
             try {
                 caselles = Integer.parseInt(sc.nextLine());
                 comprovacio = true;
