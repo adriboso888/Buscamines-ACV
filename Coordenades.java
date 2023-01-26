@@ -17,9 +17,9 @@ public class Coordenades {
         }
         do {
             System.out.print("--> X: ");
-            yCoordenades = sc.nextInt();
+            yCoordenades = Integer.parseInt(sc.nextLine());
             System.out.print("--> Y: ");
-            xCoordenades = sc.nextInt();
+            xCoordenades = Integer.parseInt(sc.nextLine());
 
 
 

@@ -30,6 +30,7 @@ public class Taulell {
     /**
      * Mostra les cordenades de les caselles
      * Amb aixo podrem veure les coordenades de X i de Y per seleccionar les caselles.
+     *
      * @param caselles
      */
     public static void nombresCoordenades(int caselles) {
@@ -45,13 +46,13 @@ public class Taulell {
      * @param caselles pasem per parametre les caselles per tal de saber quantes s'han de crear.
      */
 
-    public static int[][] mostrarTaulell(int caselles, int[][] taulell, int[][] coord){
+    public static String[][] mostrarTaulell(int caselles, int[][] taulell, String[][] coord) {
 
 
         for (int i = 0; i < caselles; i++) {
             System.out.print(i + 1 + "  ");
             for (int j = 0; j < caselles; j++) {
-                coord[i][j] = Integer.parseInt("■");
+                coord[i][j] = "■";
                 System.out.print(coord[i][j] + "  ");
                 System.out.print(taulell[i][j]);
             }

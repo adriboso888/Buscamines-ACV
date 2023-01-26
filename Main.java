@@ -19,7 +19,7 @@ public class Main {
                 caselles = Integer.parseInt(sc.nextLine());
                 Taulell.taulell(caselles);  
                 Taulell.nombresCoordenades(caselles);
-                Taulell.mostrarTaulell(caselles, Taulell.taulell(caselles), Coordenades.coord[][]);
+                Taulell.mostrarTaulell(caselles, Taulell.taulell(caselles), Coordenades.DemanarCoordenades());
                 Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
                 comprovacio = true;
 
@@ -33,7 +33,7 @@ public class Main {
 
         Taulell.taulell(caselles);
         Taulell.nombresCoordenades(caselles);
-        Taulell.mostrarTaulell(caselles, Taulell.taulell(caselles));
+        Taulell.mostrarTaulell(caselles, Taulell.taulell(caselles), Coordenades.DemanarCoordenades());
 
 
         Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
