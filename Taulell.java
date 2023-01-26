@@ -1,11 +1,15 @@
+import java.util.Random;
+
 public class Taulell {
 
     static int[][] taulell(int caselles) {
 
-        //Creacio de l'Array i declaració de les variables
         int[][] taulell = new int[caselles][caselles];
+
+
         int mines = (int) (Math.pow(caselles, 2) * 0.2);
-        int x = 0, y = 0, contador = 0;
+        int x = 0, y = 0, num = 0, contador = 0;
+
 
         //construir zones sense mines
         for (int i = 0; i < caselles; i++) {
@@ -14,7 +18,7 @@ public class Taulell {
             }
         }
 
-        //Crearem mines a poscions aleatòries
+        //crearem mines a poscions aleatories
         do {
             x = (int) (Math.random() * caselles); //generar aleatoriament posicio X de la bomba
             y = (int) (Math.random() * caselles); //generar aleatoriament posicio Y de la bomba
@@ -24,12 +28,14 @@ public class Taulell {
             }
         } while (contador != mines); //mentres el contador no sigui igual a les mines anirem repetint l'acció
 
+
+
         return taulell;
     }
 
     /**
      * Mostra les cordenades de les caselles
-     * Amb aixo podrem veure les coordenades de X i de Y per seleccionar les caselles.
+     * Amb aixo podrem veure les coordenades de X i de Y per seleccionar les caselles
      *
      * @param caselles
      */
@@ -39,5 +45,6 @@ public class Taulell {
         }
         System.out.println();
     }
+
 
 }
