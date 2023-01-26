@@ -40,24 +40,4 @@ public class Taulell {
         System.out.println();
     }
 
-    /**
-     * Mostra el taulell
-     *
-     * @param caselles pasem per parametre les caselles per tal de saber quantes s'han de crear.
-     */
-
-    public static String[][] mostrarTaulell(int caselles, int[][] taulell, String[][] coord) {
-
-
-        for (int i = 0; i < caselles; i++) {
-            System.out.print(i + 1 + "  ");
-            for (int j = 0; j < caselles; j++) {
-                coord[i][j] = "■";
-                System.out.print(coord[i][j] + "  ");
-                System.out.print(taulell[i][j]);
-            }
-            System.out.println();
-        }
-        return coord;
-    }
 }

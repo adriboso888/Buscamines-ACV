@@ -13,6 +13,7 @@ public class Coordenades {
         for (int i = 0; i < caselles; i++) {
             for (int j = 0; j < caselles; j++) {
                 coord[i][j] = "■  ";
+
             }
         }
         do {
@@ -20,7 +21,6 @@ public class Coordenades {
             yCoordenades = Integer.parseInt(sc.nextLine());
             System.out.print("--> Y: ");
             xCoordenades = Integer.parseInt(sc.nextLine());
-
 
 
             if (taulell[xCoordenades - 1][yCoordenades - 1] == 1) {
@@ -43,9 +43,38 @@ public class Coordenades {
                     System.out.println();
                 }
             }
-
-
+            proximitatMines(caselles, taulell, xCoordenades, yCoordenades);
         } while (!detectarMines);
+
         return coord;
     }
+
+    public static void proximitatMines(int caselles, int[][] taulell, int xCoordenades, int yCoordenades) {
+        for (int i = 0; i < 1; i++) {
+
+            for (int j = 0; j < 1; j++) {
+                if (taulell[xCoordenades + 1][yCoordenades] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+                } else if (taulell[xCoordenades][yCoordenades + 1] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+                } else if (taulell[xCoordenades - 1][yCoordenades] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+                } else if (taulell[xCoordenades][yCoordenades - 1] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+
+                } else if (taulell[xCoordenades + 1][yCoordenades + 1] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+                } else if (taulell[xCoordenades + 1][yCoordenades - 1] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+                } else if (taulell[xCoordenades - 1][yCoordenades + 1] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+                } else if (taulell[xCoordenades - 1][yCoordenades - 1] == 1) {
+                    System.out.println("Tens una o varies mines al voltant");
+                } else {
+                    System.out.println("No tens mines al voltant");
+                }
+            }
+        }
+    }
 }
+
