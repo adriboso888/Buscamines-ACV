@@ -17,9 +17,6 @@ Main {
 
             try {
                 caselles = Integer.parseInt(sc.nextLine());
-                Taulell.taulell(caselles);  
-                Taulell.nombresCoordenades(caselles);
-                Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
                 comprovacio = true;
 
             } catch (Exception ex) {
@@ -29,6 +26,9 @@ Main {
             }
 
         }while (!comprovacio);
+        Taulell.taulell(caselles);
+        Taulell.nombresCoordenades(caselles);
+        Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
 
 
     }
