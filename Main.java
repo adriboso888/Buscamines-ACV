@@ -18,8 +18,6 @@ Main {
             try {
                 Taulell.nombresCoordenades(caselles);
                 Taulell.taulell(caselles);
-
-
                 Coordenades.DemanarCoordenades(caselles, sc, Taulell.taulell(caselles));
                 comprovacio = true;
 

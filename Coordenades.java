@@ -32,7 +32,6 @@ public class Coordenades {
             yCoordenades = Integer.parseInt(sc.nextLine());
 
 
-            if(xCoordenades <= caselles && yCoordenades <= caselles)  //fem la comprobació per veure que les dades estan dins del taulell
 
 
 
@@ -66,7 +65,7 @@ public class Coordenades {
     public static void proximitatMines(int caselles, int[][] taulell, int xCoordenades, int yCoordenades ){
         for(int i = 0;i < 1;i++){
 
-            for(int j = 0; j< 1;j++){
+            for(int j = 0; j < 1;j++){
                 if(taulell[xCoordenades + 1][yCoordenades] == 1){
                     System.out.println("Tens una o varies mines al voltant");
                 } else if (taulell[xCoordenades][yCoordenades + 1] == 1) {
