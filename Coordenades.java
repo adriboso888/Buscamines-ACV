@@ -1,7 +1,5 @@
-import java.io.IOException;
-import java.util.Scanner;
 
-import static com.sun.beans.introspect.ClassInfo.clear;
+import java.util.Scanner;
 
 public class Coordenades {
 
@@ -22,27 +20,32 @@ public class Coordenades {
             yCoordenades = sc.nextInt();
             System.out.print("--> Y: ");
             xCoordenades = sc.nextInt();
+
+
+
             if (taulell[xCoordenades - 1][yCoordenades - 1] == 1) {
                 coord[xCoordenades - 1][yCoordenades - 1] = "☠  ";
                 for (int i = 0; i < caselles; i++) {
                     for (int j = 0; j < caselles; j++) {
                         System.out.print(coord[i][j]);
+                        System.out.print(taulell[i][j]);
                     }
                     System.out.println();
+                    detectarMines = true;
                 }
-                detectarMines = true;
             } else {
                 coord[xCoordenades - 1][yCoordenades - 1] = "\uD83C\uDD87  ";
                 for (int i = 0; i < caselles; i++) {
                     for (int j = 0; j < caselles; j++) {
                         System.out.print(coord[i][j]);
+                        System.out.print(taulell[i][j]);
                     }
                     System.out.println();
                 }
             }
-        } while (!detectarMines);
 
+
+        } while (!detectarMines);
         return coord;
     }
-
 }

@@ -1,15 +1,11 @@
-import java.util.Random;
-
 public class Taulell {
 
     static int[][] taulell(int caselles) {
 
+        //Creacio de l'Array i declaració de les variables
         int[][] taulell = new int[caselles][caselles];
-
-
         int mines = (int) (Math.pow(caselles, 2) * 0.2);
         int x = 0, y = 0, contador = 0;
-
 
         //construir zones sense mines
         for (int i = 0; i < caselles; i++) {
@@ -18,7 +14,7 @@ public class Taulell {
             }
         }
 
-        //crearem mines a poscions aleatories
+        //Crearem mines a poscions aleatòries
         do {
             x = (int) (Math.random() * caselles); //generar aleatoriament posicio X de la bomba
             y = (int) (Math.random() * caselles); //generar aleatoriament posicio Y de la bomba
@@ -33,8 +29,7 @@ public class Taulell {
 
     /**
      * Mostra les cordenades de les caselles
-     * Amb aixo podrem veure les coordenades de X i de Y per seleccionar les caselles
-     *
+     * Amb aixo podrem veure les coordenades de X i de Y per seleccionar les caselles.
      * @param caselles
      */
     public static void nombresCoordenades(int caselles) {
@@ -49,18 +44,19 @@ public class Taulell {
      *
      * @param caselles pasem per parametre les caselles per tal de saber quantes s'han de crear.
      */
-    public static String[][]  mostrarTaulell(int caselles, int[][] taulell){
-        String[][] Coord = new String[caselles][caselles];
+
+    public static int[][] mostrarTaulell(int caselles, int[][] taulell, int[][] coord){
+
 
         for (int i = 0; i < caselles; i++) {
             System.out.print(i + 1 + "  ");
             for (int j = 0; j < caselles; j++) {
-                Coord[i][j] = "■";
-                System.out.print(Coord[i][j] + "  ");
+                coord[i][j] = Integer.parseInt("■");
+                System.out.print(coord[i][j] + "  ");
                 System.out.print(taulell[i][j]);
             }
             System.out.println();
         }
-        return Coord;
+        return coord;
     }
 }
