@@ -11,10 +11,10 @@ Main {
         int caselles = 0;
         boolean comprovacio;
 
-        do {
-            Menu.mostrarMenu();
-            caselles = Integer.parseInt(sc.nextLine());
 
+        Menu.mostrarMenu();
+        caselles = Integer.parseInt(sc.nextLine());
+        do {
             try {
                 Taulell.nombresCoordenades(caselles);
                 Taulell.taulell(caselles);
