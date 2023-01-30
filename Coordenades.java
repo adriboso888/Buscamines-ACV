@@ -25,6 +25,7 @@ public class Coordenades {
             System.out.print("--> Y: ");
             xCoordenades = Integer.parseInt(sc.nextLine());
 
+
             if (taulell[xCoordenades - 1][yCoordenades - 1] == 1) {
                 coord[xCoordenades - 1][yCoordenades - 1] = "☠  ";
                 TaulaQuadratsBlancs(caselles, coord);
