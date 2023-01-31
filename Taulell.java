@@ -1,13 +1,16 @@
 import java.util.Random;
 
 public class Taulell {
+    /**
+     * Mètode per crear el taulell i assignar les mines
+     *
+     * @param caselles Nombre de caselles que ha introduït l'usuari
+     * @return Retorna l'array del taulell amb les mines
+     */
+    static int[][] taulell(int caselles, int mines) {
 
-    static int[][] taulell(int caselles) {
-
+        //Creació de l'array i declarar variables
         int[][] taulell = new int[caselles][caselles];
-
-
-        int mines = (int) (Math.pow(caselles, 2) * 0.2);
         int x = 0, y = 0, contador = 0;
 
 
@@ -26,16 +29,15 @@ public class Taulell {
                 taulell[x][y] = 1;
                 contador++;
             }
-        } while (contador != mines); //mentres el contador no sigui igual a les mines anirem repetint l'acció
-
+        } while (contador != mines); //Mentre el comptador no sigui igual a les mines anirem repetint l'acció
         return taulell;
     }
 
     /**
-     * Mostra les cordenades de les caselles
-     * Amb aixo podrem veure les coordenades de X i de Y per seleccionar les caselles
+     * Mostra les coordenades de les caselles
+     * Amb això es podran veure les coordenades de X i de Y per seleccionar les caselles.
      *
-     * @param caselles
+     * @param caselles Nombre de caselles que ha introduït l'usuari
      */
     public static void nombresCoordenades(int caselles) {
         for (int i = 0; i <= caselles; i++) {
